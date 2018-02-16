@@ -20,7 +20,8 @@ lateinit var handler : SqliteHandler
 
                                   btnadd.setOnClickListener {
 
-                                            insert()
+                                      insert()
+
                                       val intent = Intent(this@AddActivity,MainActivity::class.java)
                                       startActivity(intent)
 
@@ -42,7 +43,7 @@ lateinit var handler : SqliteHandler
          val txt: String = edttitle.text.toString()
          val txtmsg: String = edtmsg.text.toString()
          handler.insertName(txt, txtmsg)
-         Toast.makeText(this@AddActivity, "Inserted Succefully", Toast.LENGTH_SHORT).show()
+         Toast.makeText(this@AddActivity, "Inserted Successfully", Toast.LENGTH_SHORT).show()
 
      }
 }
